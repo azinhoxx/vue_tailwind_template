@@ -69,7 +69,7 @@ const DEFAULT_OPTIONS = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // generate wrong paths to files without this command
+  // generates wrong paths to files without this command
   base: '',
   plugins: [vue(), ViteImageOptimizer({ DEFAULT_OPTIONS })],
   resolve: {
