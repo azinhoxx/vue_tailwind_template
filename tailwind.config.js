@@ -6,6 +6,12 @@ export default {
       colors: {},
       fontFamily: {},
       screens: {},
+      transitionDuration: {
+        DEFAULT: '333ms',
+      },
+      transitionTimingFunction: {
+        DEFAULT: 'ease-in-out',
+      },
     },
   },
   plugins: [],
