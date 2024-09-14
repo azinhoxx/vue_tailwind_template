@@ -5,7 +5,9 @@
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
       "@images/*": ["./src/images/*"]
-    }
+    },
+    "target": "ES6"
   },
+  "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
 }
