@@ -2,6 +2,7 @@ import { fileURLToPath, URL } from 'url';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import eslint from 'vite-plugin-eslint';
 
 const DEFAULT_OPTIONS = {
   test: /\.(jpe?g|png|gif|tiff|webp|svg|avif)$/i,
@@ -71,7 +72,7 @@ const DEFAULT_OPTIONS = {
 export default defineConfig({
   // generates wrong paths to files without this command
   base: '',
-  plugins: [vue(), ViteImageOptimizer({ DEFAULT_OPTIONS })],
+  plugins: [vue(), eslint(), ViteImageOptimizer({ DEFAULT_OPTIONS })],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
