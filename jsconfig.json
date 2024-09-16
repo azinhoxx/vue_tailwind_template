@@ -4,7 +4,7 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@assets/*": ["./src/assets/*"],
-      "@images/*": ["./src/images/*"]
+      "@images/*": ["./src/assets/images/*"]
     },
     "target": "ES6"
   },
