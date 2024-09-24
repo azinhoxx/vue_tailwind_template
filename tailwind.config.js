@@ -4,14 +4,16 @@ export default {
   theme: {
     extend: {
       colors: {},
-      fontFamily: {},
       screens: {},
       transitionDuration: {
-        DEFAULT: '333ms',
+        DEFAULT: '150ms',
       },
       transitionTimingFunction: {
         DEFAULT: 'ease-in-out',
       },
+    },
+    fontFamily: {
+      lato: 'Lato',
     },
   },
   plugins: [],
