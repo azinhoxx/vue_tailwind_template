@@ -1,4 +1,10 @@
-/* default initialization */
 @tailwind base;
+
+@layer base {
+  :root {
+    font-size: 16px;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
