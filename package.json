@@ -1,8 +1,8 @@
 {
   "name": "vue-tailwind-template",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,20 +11,22 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "vue": "^3.5.3"
+    "vue": "^3.5.11"
   },
   "browserList": [
     "defaults"
   ],
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.1.3",
+    "@antfu/eslint-config": "^3.7.3",
+    "@vitejs/plugin-vue": "^5.1.4",
     "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
     "gh-pages": "^6.1.1",
-    "postcss": "^8.4.45",
+    "postcss": "^8.4.47",
     "sharp": "^0.33.5",
     "svgo": "^3.3.2",
-    "tailwindcss": "^3.4.10",
-    "vite": "^5.4.3",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8",
     "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
