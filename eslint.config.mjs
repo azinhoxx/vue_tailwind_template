@@ -4,7 +4,9 @@ import { FlatCompat } from '@eslint/eslintrc'
 const compat = new FlatCompat()
 
 export default antfu({
-  stylistic: true,
+  rules: {
+    'style/brace-style': ['error', '1tbs'],
+  },
 }, {
   files: ['**/*.vue'],
   rules: {
