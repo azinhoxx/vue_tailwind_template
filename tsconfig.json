@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "isolatedModules": true
+  },
+  "include": ["./components.d.ts", "./src/**/*", "./auto-imports.d.ts"],
+  "exclude": ["node_modules", "dist"]
+}

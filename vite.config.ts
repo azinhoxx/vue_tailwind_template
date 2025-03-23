@@ -1,4 +1,6 @@
 import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
 import { defineConfig } from 'vite'
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
@@ -70,7 +72,15 @@ const DEFAULT_OPTIONS = {
 export default defineConfig({
   // fix paths generator
   base: '',
-  plugins: [vue(), ViteImageOptimizer({ DEFAULT_OPTIONS })],
+  plugins: [
+    vue(),
+    Components({ dts: true }),
+    AutoImport({
+      dts: true,
+      imports: ['vue'],
+    }),
+    ViteImageOptimizer({ DEFAULT_OPTIONS }),
+  ],
   server: {
     host: true,
     open: true,
