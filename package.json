@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.11.0",
-    "@tailwindcss/postcss": "^4.0.15",
+    "@tailwindcss/postcss": "^4.1.1",
     "@vitejs/plugin-vue": "^5.2.3",
     "eslint": "^9.22.0",
     "gh-pages": "^6.2.0",
