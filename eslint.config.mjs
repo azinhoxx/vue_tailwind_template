@@ -1,4 +1,5 @@
 import antfu from '@antfu/eslint-config'
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss'
 
 export default antfu(
   {
@@ -10,6 +11,7 @@ export default antfu(
   {
     files: ['**/*.vue'],
     rules: {
+      'import-x/first': ['off'],
       'vue/max-attributes-per-line': [
         'warn',
         {
@@ -21,7 +23,33 @@ export default antfu(
           },
         },
       ],
-      'vue/no-multiple-template-root': ['off'],
+      'vue/brace-style': ['error', '1tbs'],
+    },
+  },
+  {
+    plugins: {
+      'better-tailwindcss': eslintPluginBetterTailwindcss,
+    },
+    settings: {
+      'better-tailwindcss': {
+        entryPoint: 'src/assets/main.css',
+      },
+    },
+    rules: {
+      ...eslintPluginBetterTailwindcss.configs['recommended-warn'].rules,
+      'better-tailwindcss/multiline': [
+        'warn',
+        {
+          group: 'emptyLine',
+          lineBreakStyle: 'windows',
+        },
+      ],
+      'better-tailwindcss/sort-classes': [
+        'warn',
+        {
+          entryPoint: './assets/css/main.css',
+        },
+      ],
     },
   },
 )
