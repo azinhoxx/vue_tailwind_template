@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  @apply motion-safe:scroll-smooth;
+}
+
 @layer base {
   :root {
     font-size: 16px;
