@@ -32,7 +32,7 @@ export default antfu(
     },
     settings: {
       'better-tailwindcss': {
-        entryPoint: 'src/assets/main.css',
+        entryPoint: './src/assets/main.css',
       },
     },
     rules: {
@@ -42,12 +42,6 @@ export default antfu(
         {
           group: 'emptyLine',
           lineBreakStyle: 'windows',
-        },
-      ],
-      'better-tailwindcss/sort-classes': [
-        'warn',
-        {
-          entryPoint: './assets/css/main.css',
         },
       ],
     },
