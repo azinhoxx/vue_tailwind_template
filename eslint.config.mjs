@@ -14,20 +14,17 @@ export default antfu(
     typescript: true,
   },
   {
+    ignores: ['./tsconfig.json'],
+  },
+  {
     rules: {
-      'ts/no-non-null-asserted-optional-chain': 'off',
-      'ts/ban-ts-comment': 'warn',
+      'antfu/top-level-function': 'off',
       'ts/consistent-type-definitions': 'off',
       'ts/no-unsafe-function-type': 'off',
       'ts/no-empty-object-type': 'off',
-      'symbol-description': 'off',
-      'no-console': 'warn',
       'import/first': 'off',
+      'no-console': 'warn',
       'style/max-statements-per-line': ['error', { max: 2 }],
-      'vue/one-component-per-file': 'off',
-      'unicorn/prefer-dom-node-text-content': 'off',
-      'unicorn/prefer-number-properties': 'off',
-      'regexp/no-super-linear-backtracking': 'off',
     },
   },
   {
