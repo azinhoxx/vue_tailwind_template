@@ -14,16 +14,13 @@ export default antfu(
     typescript: true,
   },
   {
-    ignores: ['./tsconfig.json'],
-  },
-  {
     rules: {
       'antfu/top-level-function': 'off',
       'ts/consistent-type-definitions': 'off',
       'ts/no-unsafe-function-type': 'off',
       'ts/no-empty-object-type': 'off',
       'import/first': 'off',
-      'no-console': 'warn',
+      'no-console': 'off',
       'style/max-statements-per-line': ['error', { max: 2 }],
     },
   },
@@ -38,11 +35,11 @@ export default antfu(
     },
     rules: {
       ...eslintPluginBetterTailwindcss.configs['recommended-warn'].rules,
-      'better-tailwindcss/multiline': ['warn', {
+      'better-tailwindcss/enforce-consistent-line-wrapping': ['warn', {
         group: 'emptyLine',
         lineBreakStyle: 'windows',
       }],
-      'better-tailwindcss/no-unregistered-classes': ['off'],
+      'better-tailwindcss/no-unregistered-classes': 'off',
     },
   },
 )
